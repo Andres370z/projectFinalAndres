@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    background-image: url('./assets/images/laguna.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Playfair Display", serif;
+}
+
+nav u {
+    margin: 0;
+    padding: 0;
+}
+
+/* TIPOGRAFIAS */
+.navbar .navList a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.navbar-right a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* NVBAR */
+.myNav {
+    height: 30px;
+    background-color: #E0D713;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 95%;
+    margin: 1px auto;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    /*facilita la creación de espacios uniformes entre los elementos de un contenedor flexible */
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.navbar li a {
+    color: #3F2B09;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 5px;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 20px;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 98%;
+    padding: 10px 20px;
+    margin: 1px auto;
+    padding: 10px 0px;
+
+    /* height: 100vh; */
+}
+
+.myContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color:#E0D713;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.my-column {
+    max-width: 33%;
+    flex: 2;
+    background-color: #FDFDFD;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.my-column p {
+    margin: 10px 10px 10px 10px;
+    text-align: justify;
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+}
+
+.my-column h1 {
+    margin: 10px 10px 50px 10px;
+    text-align: justify;
+
+    line-height: 1.6;
+}
+
+.linea {
+    margin: 10px 10px 10px 10px;
+}
+
+.my-column h2 {
+    margin: 10px 10px 10px 10px;
+    font-size: 45px;
+
+}
+
+.my-column2 {
+    max-width: 83%;
+    flex: 2;
+    background-color: #FDFDFD;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    line-height: 1.6;
+
+}
+
+.my-column2 h1 {
+    text-align: center;
+
+}
+
+.my-column2 h3 {
+    margin: 10px 10px 10px 10px;
+}
+
+.my-column2 p {
+    margin: 10px 10px 10px 10px;
+    text-align: justify;
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+}
