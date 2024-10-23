@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/boyaca.css')}}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="https://i.postimg.cc/mg4rWBmv/logo.png" alt="">
+      </div>
+      <ul class="nav-area">
+        <li><a href="#">Home</a></li>
+        <li><a href="{{url_for('boyaca')}}">Boyacá</a></li>
+        <li><a href="#">Cundinamarca</a></li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Aporta tu imagen</a></li>
+      </ul>
+    </div>
+    <div class="welcome-text">
+      <h1>
+        Descubre Boyacá: Naturaleza, <span>Historia y Cultura</span></h1>
+      <a href="#">Volver</a>
+    </div>
+  </header>
+  <div class="card">
+    <div class="row" style="margin-left: 30px; margin-right: 30px;">
+      <div class="col-4">
+        <div class="archive-box">
+          <span style="vertical-align: inherit;">La belleza radida en</span><br>
+          <h1>los detalles</h1>
+          <p>Algo verdaderamente lindo de Boyacá es su espíritu acogedor y tradicional, que se refleja en sus pequeños
+            pueblos coloniales, su gente amable y sus costumbres profundamente arraigadas. Uno de los ejemplos más
+            bellos de esto es Villa de Leyva, un pueblo encantador con calles empedradas y casas blancas con balcones
+            floridos. En este lugar, se siente como si el tiempo se hubiera detenido, preservando la tranquilidad y el
+            encanto de la época colonial.</p>
+        </div>
+        <div class="post-header">
+          <span class="cat"><a href="https://miviajeporcolombia.com/colombia/los-andes/boyaca/" rel="category tag">Guía
+              de
+              Viaje</a></span>
+          <h2 class="entry-title"><a href="https://miviajeporcolombia.com/colombia/los-andes/boyaca/">Cómo llegar a
+              Boyacá</a></h2>
+          <span class="title-divider"></span>
+        </div>
+
+        <div id="myImage1">
+        </div>
+        <hr style="border-top: 1px solid #000; width: 100%;">
+
+
+
+        <h1 class="text-center">Un dato Curioso</h1>
+
+        <div class="mytext">
+          <p>Un dato curioso sobre Boyacá es que la Laguna de Tota, además de ser el lago más grande de Colombia, es el
+            hogar de una especie de trucha arcoíris que no es nativa del país. Esta especie fue introducida a la laguna
+            en los años 30 para fomentar la pesca deportiva y ha prosperado tanto que hoy en día Boyacá es uno de los
+            principales productores de trucha en Colombia. Además, la laguna tiene su propio "mito", pues se cree que en
+            el fondo de sus aguas hay un tesoro escondido por los muiscas, los indígenas que habitaban la región antes
+            de la llegada de los españoles.</p>
+        </div>
+        <h4 class="widget-title">Nevado del Cocuy</h4>
+        <div class="about-widget">
+          <div class="about-img" id="myImage">
+
+          </div>
+
+
+          <p>En Boyacá se encuentra el Nevado del Cocuy, parte del Parque Nacional Natural El Cocuy, uno de los paisajes
+            más impresionantes y majestuosos del país. Aunque técnicamente está compartido entre Boyacá y los
+            departamentos de Arauca y Casanare, la entrada más común al parque es desde Boyacá.
+
+            El Nevado del Cocuy es una extensa cadena montañosa de los Andes orientales, que contiene los glaciares más
+            grandes de Colombia. Entre sus picos nevados más destacados se encuentran el Ritacuba Blanco, que es el más
+            alto con 5,330 metros sobre el nivel del mar, y el Pan de Azúcar. Estos picos están rodeados por paisajes de
+            páramos, lagunas cristalinas, y valles verdes, lo que hace de la región un paraíso para los amantes del
+            senderismo y la naturaleza.
+          </p>
+
+          <div class="about-img" id="myImage3">
+
+          </div>
+
+          <div class="about-img" id="myImage4">
+
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="archive-box">
+          <h1>Boyacá</h1>
+
+        </div>
+        <div class="archive-box">
+          <h3>Cuna de la Historia y la Naturaleza en el Corazón de Colombia</h3>
+          <p>
+            Boyacá es un departamento ubicado en la región central de Colombia, conocido por su rica historia, paisajes
+            naturales y contribución a la independencia del país. Su capital es Tunja, una ciudad de gran relevancia
+            histórica, ya que fue escenario de batallas cruciales durante la campaña libertadora liderada por Simón
+            Bolívar, como la Batalla de Boyacá en 1819, que selló la independencia de Colombia y otros países de
+            Sudamérica. Boyacá también se destaca por su geografía diversa, que incluye montañas, valles y páramos, como
+            el famoso Páramo de Ocetá, considerado uno de los más bellos del mundo. La economía de la región está basada
+            en la agricultura, siendo un importante productor de papa, maíz y café, además de contar con una notable
+            industria artesanal, especialmente en la elaboración de tejidos y cerámica. Además de su patrimonio natural
+            y cultural, Boyacá es un centro turístico, con lugares emblemáticos como Villa de Leyva, una ciudad colonial
+            conocida por su arquitectura bien conservada y sus festivales culturales.
+          </p>
+
+        </div>
+        <div class="archive-box">
+          <div class="post-header">
+            <span class="cat"><a href="https://miviajeporcolombia.com/colombia/los-andes/boyaca/" rel="category tag">Lo
+                lindo de</a></span>
+            <h2 class="entry-title"><a href="https://miviajeporcolombia.com/colombia/los-andes/boyaca/">Su
+                biodiversidad</a></h2>
+            <span class="title-divider"></span>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p> Boyacá cuenta con bosques andinos y humedales, que también son hábitats de una gran cantidad de
+                especies. En los bosques andinos, crecen árboles como el roble y el cedro, y viven animales como el
+                puma, el armadillo y una amplia diversidad de aves. Los humedales, como la Laguna de Tota, el lago más
+                grande de Colombia, albergan una rica fauna acuática y aves migratorias, siendo un importante refugio
+                para especies en peligro.
+              </p>
+            </div>
+
+
+            <div class="col-6" id="myImage2">
+
+            </div>
+            <div class="col-12 mt-4">
+              <p>Boyacá es un departamento que destaca por su increíble biodiversidad, gracias a su variada geografía
+                que abarca desde zonas bajas hasta altas montañas, valles y páramos. Esta diversidad de ecosistemas
+                permite que la región albergue una rica flora y fauna, con muchas especies endémicas y únicas de la
+                región andina.
+
+                Uno de los ecosistemas más importantes de Boyacá son sus páramos, como el Páramo de Pisba y el Páramo de
+                Ocetá. Los páramos son zonas frías y húmedas ubicadas a grandes altitudes, y son vitales para la
+                regulación del agua, ya que capturan y almacenan grandes cantidades de agua que luego abastecen a ríos y
+                lagos. Estos ecosistemas son hogar de plantas adaptadas a las condiciones extremas, como los
+                frailejones, una especie emblemática de los páramos. En cuanto a la fauna, en los páramos de Boyacá se
+                pueden encontrar especies como el oso de anteojos, el venado de cola blanca, y aves como el cóndor de
+                los Andes y varias especies de colibríes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <canvas id="myChart" width="400" height="200"></canvas>
+        <div class="archive-box">
+          <div class="col-12 mt-4">
+            <p>
+              Para contextualizar la información del diagrama de barras que muestra la cantidad de fotos recibidas en
+              Boyacá, es importante resaltar la relevancia de este departamento como destino fotográfico. Boyacá, con
+              sus paisajes naturales impresionantes y su riqueza cultural, ha atraído a una variedad de fotógrafos que
+              buscan capturar la esencia de sus montañas, páramos, pueblos coloniales y la vida cotidiana de sus
+              habitantes.
+
+              En el análisis de los datos, se puede observar que el lugar que más fotos recibió es el Nevado del Cocuy.
+              Esto no es
+              sorprendente, ya que este lugar es uno de los más representativos del departamento y es conocido por su
+              belleza natural, lo
+              que lo convierte en un punto de interés tanto para fotógrafos profesionales como aficionados.
+              El diagrama de barras no solo refleja la cantidad de fotos recibidas, sino que también destaca cómo algunos lugares y fotógrafos han sido especialmente activos en la contribución a la visibilidad de Boyacá, ayudando a posicionar al departamento como un referente en el ámbito fotográfico y turístico.
+
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script src="{{url_for('static', filename='js/boyaca.js')}}"></script>
+
+</html>
