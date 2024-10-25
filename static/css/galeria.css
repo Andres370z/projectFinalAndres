@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+a {
+    text-decoration: none !important;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+p {
+    font-family: "Lora", serif;
+    text-align: justify;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: auto;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://media.viajando.travel/p/a321dc313b99a08c6492a3af3161561f/adjuntos/236/imagenes/000/458/0000458255/1200x0/smart/boyaca-raquira.jpg);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.nav-area {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.nav-area li {
+    display: inline-block;
+}
+
+.nav-area li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-area li a:hover {
+    background: #fff;
+    color: #333;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 100%;
+    padding: 15px 0;
+}
+
+.welcome-text {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+
+.welcome-text h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.welcome-text h1 span {
+    color: #00fecb;
+}
+
+.welcome-text a {
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+.welcome-text a:hover {
+    background: #fff;
+    color: #333;
+}
+
+/*resposive*/
+
+@media (max-width:600px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .logo {
+        float: none;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .nav-area {
+        float: none;
+        margin-top: 0;
+    }
+
+    .nav-area li a {
+        padding: 5px;
+        font-size: 11px;
+    }
+
+    .nav-area {
+        text-align: center;
+    }
+
+    .welcome-text {
+        width: 100%;
+        height: auto;
+        margin: 30% 0;
+    }
+
+    .welcome-text h1 {
+        font-size: 30px;
+    }
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.post-header .cat {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.post-header h2 a,
+.post-header h1,
+.post-header h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.4em;
+    -o-transition: .25s;
+    -ms-transition: .25s;
+    -moz-transition: .25s;
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+
+.post-header a {
+    color: #00fecb;
+}
+
+.title-divider {
+    border-top: 2px solid;
+    display: block;
+    max-width: 48px;
+    margin: 0 auto 15px;
+    color: #161616;
+}
+
+.archive-box {
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+    border: 1px solid #e8e8e8;
+    padding: 28px;
+}
+
+.archive-box span {
+    font-size: 17px;
+    font-style: italic;
+    color: #999;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.archive-box h1 {
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    display: inline;
+}
+
+.mytext p {
+    text-align: justify;
+}
+
+.widget-title {
+    background: #161616;
+    text-align: center;
+    color: #fff;
+    padding: 13px 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.about-widget {
+    text-align: center;
+}
+
+
+.about-img {
+    margin-bottom: 14px;
+}
+
+
+
+#image-container img {
+    width: 300px; 
+    height: 300px; 
+}

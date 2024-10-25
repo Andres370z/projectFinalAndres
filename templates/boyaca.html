@@ -15,14 +15,12 @@
   <header>
     <div class="wrapper">
       <div class="logo">
-        <img src="https://i.postimg.cc/mg4rWBmv/logo.png" alt="">
       </div>
       <ul class="nav-area">
-        <li><a href="#">Home</a></li>
+        <li><a href="{{url_for('index')}}">Home</a></li>
         <li><a href="{{url_for('boyaca')}}">Boyacá</a></li>
-        <li><a href="#">Cundinamarca</a></li>
-        <li><a href="#">Galeria</a></li>
-        <li><a href="#">Aporta tu imagen</a></li>
+        <li><a href="{{url_for('cundinamarca')}}">Cundinamarca</a></li>
+        <li><a href="{{url_for('galeria')}}">Galeria</a></li>
       </ul>
     </div>
     <div class="welcome-text">

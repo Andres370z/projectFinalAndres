@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/cundinamarca.css')}}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="logo">
+      </div>
+      <ul class="nav-area">
+        <li><a href="{{url_for('index')}}">Home</a></li>
+        <li><a href="{{url_for('boyaca')}}">Boyacá</a></li>
+        <li><a href="{{url_for('cundinamarca')}}">Cundinamarca</a></li>
+        <li><a href="{{url_for('galeria')}}">Galería</a></li>
+      </ul>
+    </div>
+    <div class="welcome-text">
+      <h1>
+        Descubre Cundinamarca: Naturaleza, <span>Historia y Cultura</span></h1>
+      <a href="#">Volver</a>
+    </div>
+  </header>
+  <div class="card">
+    <div class="row" style="margin-left: 30px; margin-right: 30px;">
+      <div class="col-4">
+        <div class="archive-box">
+          <span style="vertical-align: inherit;">La belleza reside en</span><br>
+          <h1>los detalles</h1>
+          <p>Cundinamarca es un departamento que combina a la perfección la riqueza cultural e histórica con la
+            biodiversidad natural. Su capital, Bogotá, es un centro urbano vibrante, pero también hay encantadores
+            municipios como Guatavita y Zipaquirá, conocidos por su arquitectura colonial y monumentos como la
+            Catedral de Sal.</p>
+        </div>
+        <div class="post-header">
+          <span class="cat"><a href="https://miviajeporcolombia.com/colombia/los-andes/cundinamarca/"
+              rel="category tag">Guía de
+              Viaje</a></span>
+          <h2 class="entry-title"><a href="https://miviajeporcolombia.com/colombia/los-andes/cundinamarca/">Cómo llegar
+              a
+              Cundinamarca</a></h2>
+          <span class="title-divider"></span>
+        </div>
+
+        <div id="myImage1">
+        </div>
+        <hr style="border-top: 1px solid #000; width: 100%;">
+
+        <h1 class="text-center">Un dato Curioso</h1>
+
+        <div class="mytext">
+          <p>Un dato curioso sobre Cundinamarca es que en el embalse de Tominé se encuentra el antiguo pueblo de
+            Guatavita, sumergido intencionalmente para dar paso al embalse. Esta región está llena de mitos y leyendas,
+            especialmente la Leyenda de El Dorado, la cual habla de rituales muiscas donde lanzaban oro a la laguna de
+            Guatavita.</p>
+        </div>
+        <h4 class="widget-title">Parque Chingaza</h4>
+        <div class="about-widget">
+          <div class="about-img">
+            <img src="https://cdn.colombia.com/sdi/2014/03/13/parque-nacional-natural-chingaza-850163.webp" alt="" class="img-fluid rounded mx-auto d-block">
+          </div>
+
+          <p>El Parque Nacional Natural Chingaza es uno de los ecosistemas más importantes de Cundinamarca. Este parque
+            protege una amplia variedad de fauna y flora andina, incluyendo especies como el oso de anteojos y el
+            venado de páramo, además de ser una fuente vital de agua potable para la ciudad de Bogotá y sus alrededores.</p>
+          <div class="about-img" id="myImage3">
+          </div>
+          <div class="about-img" id="myImage4">
+          </div>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="archive-box">
+          <h1>Cundinamarca</h1>
+        </div>
+        <div class="archive-box">
+          <h3>Corazón Cultural y Biodiverso de Colombia</h3>
+          <p>
+            Cundinamarca, situado en el centro del país, es famoso por sus diversos ecosistemas que incluyen páramos,
+            bosques andinos y humedales, así como por su rica historia precolombina y colonial. Este departamento es
+            hogar de sitios emblemáticos como la laguna de Guatavita y el Parque Natural Chingaza, los cuales no solo
+            enriquecen el patrimonio natural de Colombia, sino que también tienen un gran valor cultural y simbólico
+            para los muiscas, los indígenas que habitaban esta región.
+          </p>
+        </div>
+        <div class="archive-box">
+          <div class="post-header">
+            <span class="cat"><a href="https://miviajeporcolombia.com/colombia/los-andes/cundinamarca/"
+                rel="category tag">Lo lindo de</a></span>
+            <h2 class="entry-title"><a href="https://miviajeporcolombia.com/colombia/los-andes/cundinamarca/">Su
+                biodiversidad</a></h2>
+            <span class="title-divider"></span>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <p> Cundinamarca cuenta con bosques andinos, páramos y ríos, hábitat de muchas especies en peligro. El
+                Parque Chingaza es especialmente importante, pues es hogar de especies como el cóndor andino, el oso de
+                anteojos y una gran variedad de flora de páramo, como los frailejones. Estos ecosistemas contribuyen al
+                abastecimiento de agua para millones de personas en Bogotá y sus alrededores.</p>
+            </div>
+
+            <div class="col-6" id="myImage2">
+            </div>
+            <div class="col-12 mt-4">
+              <p>Cundinamarca alberga una biodiversidad extraordinaria gracias a su amplia gama de ecosistemas. Desde
+                el páramo hasta los bosques húmedos tropicales, el departamento ofrece un refugio a miles de especies de
+                plantas y animales, algunas endémicas de la región. Los páramos, como el de Sumapaz y el de Chingaza,
+                son cruciales en la regulación de los recursos hídricos y proveen agua a Bogotá y sus alrededores,
+                permitiendo el sustento de comunidades enteras.</p>
+            </div>
+          </div>
+        </div>
+        <canvas id="myChart" width="400" height="200"></canvas>
+        <div class="archive-box">
+          <div class="col-12 mt-4">
+            <p>
+              En el contexto del diagrama de barras que muestra la cantidad de fotos recibidas en Cundinamarca, se
+              puede observar la popularidad de lugares... Estos sitios,
+              además de ser importantes áreas naturales, son destinos frecuentes para fotógrafos y visitantes, quienes
+              buscan capturar la belleza de los paisajes y la fauna del departamento. La contribución de fotografías en
+              estas áreas destaca la importancia de Cundinamarca en la conservación de la biodiversidad y como un punto
+              clave de turismo ecológico.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script src="{{url_for('static', filename='js/cundinamarca.js')}}"></script>
+
+</html>
